@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -27,22 +28,11 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
-  <!-- Owl Carousel CSS -->
-  <link rel="stylesheet" href="js/owlcarousel/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="js/owlcarousel/assets/owl.theme.default.min.css">
-
   <!-- jQuery
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="js/accordion.js"></script>
-  
-  <!-- Owl Carousel JS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="js/owlcarousel/owl.carousel.min.js"></script>
 
-  <!-- Owl Carouselを動作させるために追加
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="js/test-carousel.js"></script>  
   
     <!-- HumbergerMenuを動作させるために追加
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -71,15 +61,14 @@
 					</ul>
 					
 				<ul class="headerNavi_sp">
-				  <li><a href="/" target="_blank" ></a><img src="images/top_sp/fb.png" alt="フェイスブック" srcset="images/top_sp/fb@2x.png 2x" /></a></li>
-				  <li><a href="/" target="_blank" ></a><img src="images/top_sp/insta.png" alt="インスタグラム" srcset="images/top_sp/insta@2x.png 2x" /></a></li>
-				  <li id="menu"><a href="/" target="_blank" ></a><img src="images/top_sp/menu_icon.png" alt="メニュー" srcset="images/top_sp/menu_icon@2x.png 2x" /></a></li>
+				  <li><a href="/" target="_blank" ></a><img src="images/top_sp/fb.png" alt="フェイスブック" srcset="images/top_sp/fb@2x.png 2x" /></li>
+				  <li><a href="/" target="_blank" ></a><img src="images/top_sp/insta.png" alt="インスタグラム" srcset="images/top_sp/insta@2x.png 2x" /></li>
+				  <li id="menu"><a href="/" target="_blank" ></a><img src="images/top_sp/menu_icon.png" alt="メニュー" srcset="images/top_sp/menu_icon@2x.png 2x" /></li>
 				<ul class="sp_menu_toggle">
   <li><a href="">LOGIN</a></li>
   <li><a href="">CART</a></li>
   <li><a href="">MY&nbsp;PAGE</a></li>
   <li><a href="">SHOPPING&nbsp;GUIDE</a></li>
-</ul>
 </ul>
 
 
@@ -90,20 +79,33 @@
   <div class="row">
   <div id="contentLeft" class="nine columns"> 
 
-        <div class="owl-carousel owl-theme">
-            <div><img src="images/top/ca_banner.jpg"></div>
-            <div><img src="images/top/ca_banner_sample.png"></div>
-            <div><img src="images/top/ca_banner_sample.png"></div>
-            <div><img src="images/top/ca_banner_sample.png"></div>
-        </div>
+  <ul class="breadCrumb">
+    
+    <li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+      <a href="/" itemprp="url">
+        <span itemprop="title"><img src="images/list/home_icon.png" alt=HOME>HOME</span>
+      </a>
+    </li>
+    
+    <li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+      <a href="/" itemprp="url">
+        <span itemprop="title">カテゴリー名</span>
+      </a>
+    </li>
+    
+  </ul>
+  
+  
+  <div id="mainVisual">
+  <div class="pc">
+    <h2>
+    <img src="images/list/cate_image.jpg"></h2>
+  </div>
+  <div class="sp">
+    <h2><img src="images/list/cate_image_sp.jpg"></h2>
+  </div>
+  </div>
 
-
-      <div class="pc">
-      <h2><img src="images/top/title_newitems.png"></h2>
-      </div>
-      <div class="sp">
-        <h2><img src="images/top_sp/title_new_item.png"></h2>
-      </div>
       <div class="colWrap">
 									<div class="col">
 									  <a href="/" target="_blank" class="">
@@ -150,12 +152,42 @@
 										<p>¥10,000 (tax in)</p>
 									</a><!--/col-->
 									</div>
-									</div><!-- colWrap -->
-								
+									
+																		<div class="col">
+									  <a href="/" target="_blank" class="">
+										<figure class="img"><img src="images/top/item_01.jpg" alt="NewItems1"></figure>
+										<p class="title">商品名が入ります商品名が入ります商品名が入ります</p>
+										<p>¥10,000 (tax in)</p>
+									</a><!--/col-->
+									</div>
+									<div class="col">
+									  <a href="/" target="_blank" class="">
+										<figure class="img"><img src="images/top/item_02.jpg" alt="NewItems1"></figure>
+										<p class="title">商品名が入ります商品名が入ります商品名が入ります</p>
+										<p>¥10,000 (tax in)</p>
+									</a><!--/col-->
+									</div>						
+									<div class="col">
+									  <a href="/" target="_blank" class="">
+										<figure class="img"><img src="images/top/item_03.jpg" alt="NewItems1"></figure>
+										<p class="title">商品名が入ります商品名が入ります商品名が入ります</p>
+										<p>¥10,000 (tax in)</p>
+									</a><!--/col-->
+									</div>	
+			</div><!-- colWrap -->
+									
+			<nav class="pagenation">
+        <a class="back" href="/">BACK</a>
+        <a class="next" href="/">NEXT</a>
+      </nav>
+      
+      <div id="recently">
       <div class="pc">
-      <h2><img src="images/top/title_popular.png"></h2></div>
+      <h2><img src="images/list/recent_pro_pc.png" alt="SHOPPING GUIDE"></h2>
+      </div>
+      
       <div class="sp">
-        <h2><img src="images/top_sp/title_popular.png"></h2>
+      <h2><img src="images/list/title_recent_pro.png" srcset="images/list/title_recent_pro@2x.png 2x" alt="SHOPPING GUIDE"></h2>
       </div>
       
       <div class="colWrap">
@@ -181,40 +213,21 @@
 										<p>¥10,000 (tax in)</p>
 									</a><!--/col-->
 									</div>							
-								
-									<div class="col">
-									  <a href="/" target="_blank" class="">
-										<figure class="img"><img src="images/top/item_10.jpg" alt="NewItems1"></figure>
-										<p class="title">商品名が入ります商品名が入ります商品名が入ります</p>
-										<p>¥10,000 (tax in)</p>
-									</a><!--/col-->
-									</div>
-									
-									<div class="col">
-									  <a href="/" target="_blank" class="">
-										<figure class="img"><img src="images/top/item_11.jpg" alt="NewItems1"></figure>
-										<p class="title">商品名が入ります商品名が入ります商品名が入ります</p>
-										<p>¥10,000 (tax in)</p>
-									</a><!--/col-->
-									</div>
-									
-									<div class="col">
-									  <a href="/" target="_blank" class="">
-										<figure class="img"><img src="images/top/item_12.jpg" alt="NewItems1"></figure>
-										<p class="title">商品名が入ります商品名が入ります商品名が入ります</p>
-										<p>¥10,000 (tax in)</p>
-									</a><!--/col-->
-									</div>
-									</div><!-- colWrap -->
-			<div class="pc">						
-      <h2><img src="images/top/title_guide.png"></h2>
+			</div>
+			</div>
+			
+			
+      <div id="shoppingGuide">
+      <div class="pc">
+      <h2><img src="images/top/title_guide.png" alt="SHOPPING GUIDE"></h2>
       </div>
       <div class="sp">
-        <h2><img src="images/top_sp/title_guide.png" srcset="images/top_sp/title_guide@2x.png 2x" alt="APPLE BERY"></h2>
+        <h2><img src="images/top_sp/title_guide.png" srcset="images/top_sp/title_guide@2x.png 2x" alt="SHOPPING GUIDE"></h2>
+      </div>
       </div>
       
       <div class="colWrap">
-      <div class="colWrapTwo subColor">      
+      <div class="colWrapTwo subColor"> 
           <h3>お届けについて</h3>
           <img src="images/top/otodoke_banner.png" alt="お届けについて">
               <p>■○○運輸</p>
@@ -244,18 +257,17 @@
       </div><!-- colWrapTwo -->    
       </div><!-- colWrap -->
       
-      
 </div><!--contenLeft-->
 
-<div id="rightSidebar " class="three columns">
+<div id="rightSidebar" class="three columns">
 <div id="navigation">
-<div id="serch">
+  <div id="serch">
   <img src="images/top/itemserch.png">
     <input type="search" name="search" placeholder="Serch..." class="serchInput">
 </div>
+</div>
 
 
-<dl id="rightNavi">
 <section id="pagelink">
     <h3>ページリンク</h3>
     </section>
@@ -276,9 +288,11 @@
 <section id="about">
     <h3>ABOUT</h3>
     <div class="aboutContents clearfix">
+    <div class="aboutContentsBox">
     <img src="images/top/about_img.jpg">
-    <p>お店の説明お店の説明お店の説明<br>
+    <p>お店の説明お店の説明お店の説明
     がはいりますお店の説明お店の説明お店の説明</p>
+    </div>
     <img src="images/top/more_btn.png">
     </div>
   </section>
@@ -286,17 +300,18 @@
   <section id="shopInfo">
     <h3>SHOP&nbsp;INFO</h3>
     <div class="aboutContents clearfix">
+    <div class="aboutContentsBox">
     <img src="images/top/shopinfo_img.jpg">
-    <p>お店の説明お店の説明お店の説明<br>
+    <p>お店の説明お店の説明お店の説明
     がはいりますお店の説明お店の説明お店の説明</p>
+    </div>
     <img src="images/top/more_btn.png">
     </div>
-  </div>    
-  </div>
-  
-</div>
+    </section>
+
 <!-- rightSidebar -->
 </div>
+
 </div>
 
 <footer>

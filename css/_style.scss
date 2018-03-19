@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/*contentAll*/
+// font-family
+$baseFontFamily :"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+
+#contentAll {
+  width:980px;
+  margin:0 auto;
+}
+
+#display_img img {
+  width: 200px;
+}
+li {
+  list-style: none;
+  display: inline-block;
+}
+li img {
+  width: 50px;
+  cursor: pointer;
+}

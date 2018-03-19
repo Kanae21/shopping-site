@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -27,22 +28,11 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
-  <!-- Owl Carousel CSS -->
-  <link rel="stylesheet" href="js/owlcarousel/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="js/owlcarousel/assets/owl.theme.default.min.css">
-
   <!-- jQuery
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="js/accordion.js"></script>
-  
-  <!-- Owl Carousel JS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="js/owlcarousel/owl.carousel.min.js"></script>
 
-  <!-- Owl Carouselを動作させるために追加
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="js/test-carousel.js"></script>  
   
     <!-- HumbergerMenuを動作させるために追加
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -71,15 +61,14 @@
 					</ul>
 					
 				<ul class="headerNavi_sp">
-				  <li><a href="/" target="_blank" ></a><img src="images/top_sp/fb.png" alt="フェイスブック" srcset="images/top_sp/fb@2x.png 2x" /></a></li>
-				  <li><a href="/" target="_blank" ></a><img src="images/top_sp/insta.png" alt="インスタグラム" srcset="images/top_sp/insta@2x.png 2x" /></a></li>
-				  <li id="menu"><a href="/" target="_blank" ></a><img src="images/top_sp/menu_icon.png" alt="メニュー" srcset="images/top_sp/menu_icon@2x.png 2x" /></a></li>
+				  <li><a href="/" target="_blank" ></a><img src="images/top_sp/fb.png" alt="フェイスブック" srcset="images/top_sp/fb@2x.png 2x" /></li>
+				  <li><a href="/" target="_blank" ></a><img src="images/top_sp/insta.png" alt="インスタグラム" srcset="images/top_sp/insta@2x.png 2x" /></li>
+				  <li id="menu"><a href="/" target="_blank" ></a><img src="images/top_sp/menu_icon.png" alt="メニュー" srcset="images/top_sp/menu_icon@2x.png 2x" /></li>
 				<ul class="sp_menu_toggle">
   <li><a href="">LOGIN</a></li>
   <li><a href="">CART</a></li>
   <li><a href="">MY&nbsp;PAGE</a></li>
   <li><a href="">SHOPPING&nbsp;GUIDE</a></li>
-</ul>
 </ul>
 
 
@@ -90,74 +79,145 @@
   <div class="row">
   <div id="contentLeft" class="nine columns"> 
 
-        <div class="owl-carousel owl-theme">
-            <div><img src="images/top/ca_banner.jpg"></div>
-            <div><img src="images/top/ca_banner_sample.png"></div>
-            <div><img src="images/top/ca_banner_sample.png"></div>
-            <div><img src="images/top/ca_banner_sample.png"></div>
-        </div>
+  <ul class="breadCrumb">
+    
+    <li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+      <a href="/" itemprp="url">
+        <span class="breadTitle" itemprop="title"><img src="images/list/home_icon.png" alt=HOME>HOME</span>
+      </a>
+    </li>
+    
+    <li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+      <a href="/" itemprp="url">
+        <span class="breadTitle" itemprop="title">カテゴリー名</span>
+      </a>
+    </li>
+    
+    <li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+      <a href="/" itemprp="url">
+        <span class="breadTitle" itemprop="title">商品名</span>
+      </a>
+    </li>
+    
+  </ul>
+  
+<div id="carousel"> 
+
+  <div class="productsBox clearfix">
+    <h1 class="left">商品名が入ります</h1>
+  <p class="right">fa0001-91</p>
+  </div>
+  
+  <div id="carouselWrap">
+  <div id="display_img">
+<img src="images/products/pro_img_01.jpg" alt="product">
+</div>
 
 
-      <div class="pc">
-      <h2><img src="images/top/title_newitems.png"></h2>
+
+<ul id="list_img">
+  <li><img src="images/products/pro_img_01.jpg" alt="product1"></li>
+  <li><img src="images/products/pro_img_02.jpg" alt="product2"></li>
+  <li><img src="images/products/pro_img_03.jpg" alt="product3"></li>
+  <li><img src="images/products/pro_img_04.jpg" alt="product4"></li>
+  <li><img src="images/products/pro_img_05.jpg" alt="product5"></li>
+  <li><img src="images/products/gray_pro_img.jpg" alt="product6"></li>
+  <li><img src="images/products/gray_pro_img.jpg" alt="product6"></li>
+  <li><img src="images/products/gray_pro_img.jpg" alt="product6"></li>
+  <li><img src="images/products/gray_pro_img.jpg" alt="product6"></li>
+  <li><img src="images/products/gray_pro_img.jpg" alt="product6"></li>
+  
+</ul>
+</div>
+
+<div id="color">
+  <h2><img src="images/products/title_color.png" alt="price"></h2>
+<table border="1">
+  <tr>
+    <td></td><td>カラー1</td><td>カラー1</td>
+  </tr>
+  <tr>
+    <td>サイズ</td>
+    <td>
+      <div class="radio">
+      <label>
+  <input type="radio" name="radio" class="radio-input" id="radio-01">
+  <span class="radio-parts">&nbsp;</span>
+      </label>
+    </td>
+    <td>
+  <label>
+        <input type="radio" name="radio" class="radio-input" id="radio-02">
+  <span class="radio-parts">&nbsp;</span>
+  </label>
       </div>
-      <div class="sp">
-        <h2><img src="images/top_sp/title_new_item.png"></h2>
-      </div>
-      <div class="colWrap">
-									<div class="col">
-									  <a href="/" target="_blank" class="">
-										<figure class="img"><img src="images/top/item_01.jpg" alt="NewItems1"></figure>
-										<p class="title">商品名が入ります商品名が入ります商品名が入ります</p>
-										<p>¥10,000 (tax in)</p>
-									</a><!--/col-->
-									</div>
-									<div class="col">
-									  <a href="/" target="_blank" class="">
-										<figure class="img"><img src="images/top/item_02.jpg" alt="NewItems1"></figure>
-										<p class="title">商品名が入ります商品名が入ります商品名が入ります</p>
-										<p>¥10,000 (tax in)</p>
-									</a><!--/col-->
-									</div>						
-									<div class="col">
-									  <a href="/" target="_blank" class="">
-										<figure class="img"><img src="images/top/item_03.jpg" alt="NewItems1"></figure>
-										<p class="title">商品名が入ります商品名が入ります商品名が入ります</p>
-										<p>¥10,000 (tax in)</p>
-									</a><!--/col-->
-									</div>							
-								
-									<div class="col">
-									  <a href="/" target="_blank" class="">
-										<figure class="img"><img src="images/top/item_04.jpg" alt="NewItems1"></figure>
-										<p class="title">商品名が入ります商品名が入ります商品名が入ります</p>
-										<p>¥10,000 (tax in)</p>
-									</a><!--/col-->
-									</div>
-									
-									<div class="col">
-									  <a href="/" target="_blank" class="">
-										<figure class="img"><img src="images/top/item_05.jpg" alt="NewItems1"></figure>
-										<p class="title">商品名が入ります商品名が入ります商品名が入ります</p>
-										<p>¥10,000 (tax in)</p>
-									</a><!--/col-->
-									</div>
-									
-									<div class="col">
-									  <a href="/" target="_blank" class="">
-										<figure class="img"><img src="images/top/item_06.jpg" alt="NewItems1"></figure>
-										<p class="title">商品名が入ります商品名が入ります商品名が入ります</p>
-										<p>¥10,000 (tax in)</p>
-									</a><!--/col-->
-									</div>
-									</div><!-- colWrap -->
-								
+    </td>
+  </tr>
+</table>
+  
+</div>
+
+<div class="carouselBox">
+<div class="carouselLeft">
+<div id="price">
+  <h2><img src="images/products/title_price.png" alt="price"></h2>
+  <p class=""><span class="colorRed">¥1,000</span>(tax in)</p>
+  </div>
+  
+  <div id="quantity">
+  <h2><img src="images/products/title_quantity.png" alt="quantity"></h2>
+  <form>
+    <input type="text" class="hoge" />
+</form>
+  </div>
+  </div>
+  
+  <div id="cart">
+  <img src="images/products/add_to_cart.png" alt="Add To Cart">
+  </div>  
+  </div>
+
+  
+  <div id="description">
+  <h2>商品説明</h2>
+  <dl>
+  <dt>&#9632;説明タイトル説明タイトル説明タイトル説明タイトル</dt>
+  <dd>
+   説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト
+   説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト
+    説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト
+   説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト
+  </dd>
+
+  <!-- Other terms and descriptions -->
+</dl>
+  
+
+  <table border="1">
+  <tr>
+    <th>カラー</th><td>説明文が入ります説明文が入ります</td>
+  </tr>
+  <tr>
+    <th>サイズ</th><td>説明文が入ります説明文が入ります</td>
+  </tr>
+</table>
+  
+  </div>
+  
+  
+  
+  
+</div><!--carousel-->
+      
+      <div id="recently">
       <div class="pc">
-      <h2><img src="images/top/title_popular.png"></h2></div>
-      <div class="sp">
-        <h2><img src="images/top_sp/title_popular.png"></h2>
+      <h2><img src="images/list/recent_pro_pc.png" alt="SHOPPING GUIDE"></h2>
       </div>
       
+      <div class="sp">
+      <h2><img src="images/list/title_recent_pro.png" srcset="images/list/title_recent_pro@2x.png 2x" alt="SHOPPING GUIDE"></h2>
+      </div>
+    
       <div class="colWrap">
 									<div class="col">
 									  <a href="/" target="_blank" class="">
@@ -181,40 +241,21 @@
 										<p>¥10,000 (tax in)</p>
 									</a><!--/col-->
 									</div>							
-								
-									<div class="col">
-									  <a href="/" target="_blank" class="">
-										<figure class="img"><img src="images/top/item_10.jpg" alt="NewItems1"></figure>
-										<p class="title">商品名が入ります商品名が入ります商品名が入ります</p>
-										<p>¥10,000 (tax in)</p>
-									</a><!--/col-->
-									</div>
-									
-									<div class="col">
-									  <a href="/" target="_blank" class="">
-										<figure class="img"><img src="images/top/item_11.jpg" alt="NewItems1"></figure>
-										<p class="title">商品名が入ります商品名が入ります商品名が入ります</p>
-										<p>¥10,000 (tax in)</p>
-									</a><!--/col-->
-									</div>
-									
-									<div class="col">
-									  <a href="/" target="_blank" class="">
-										<figure class="img"><img src="images/top/item_12.jpg" alt="NewItems1"></figure>
-										<p class="title">商品名が入ります商品名が入ります商品名が入ります</p>
-										<p>¥10,000 (tax in)</p>
-									</a><!--/col-->
-									</div>
-									</div><!-- colWrap -->
-			<div class="pc">						
-      <h2><img src="images/top/title_guide.png"></h2>
+			</div>
+			</div>
+			
+			
+      <div id="shoppingGuide">
+      <div class="pc">
+      <h2><img src="images/top/title_guide.png" alt="SHOPPING GUIDE"></h2>
       </div>
       <div class="sp">
-        <h2><img src="images/top_sp/title_guide.png" srcset="images/top_sp/title_guide@2x.png 2x" alt="APPLE BERY"></h2>
+        <h2><img src="images/top_sp/title_guide.png" srcset="images/top_sp/title_guide@2x.png 2x" alt="SHOPPING GUIDE"></h2>
+      </div>
       </div>
       
       <div class="colWrap">
-      <div class="colWrapTwo subColor">      
+      <div class="colWrapTwo subColor"> 
           <h3>お届けについて</h3>
           <img src="images/top/otodoke_banner.png" alt="お届けについて">
               <p>■○○運輸</p>
@@ -244,18 +285,17 @@
       </div><!-- colWrapTwo -->    
       </div><!-- colWrap -->
       
-      
-</div><!--contenLeft-->
+</div><!--contentLeft-->
 
-<div id="rightSidebar " class="three columns">
+<div id="rightSidebar" class="three columns">
 <div id="navigation">
-<div id="serch">
+  <div id="serch">
   <img src="images/top/itemserch.png">
     <input type="search" name="search" placeholder="Serch..." class="serchInput">
 </div>
+</div>
 
 
-<dl id="rightNavi">
 <section id="pagelink">
     <h3>ページリンク</h3>
     </section>
@@ -276,9 +316,11 @@
 <section id="about">
     <h3>ABOUT</h3>
     <div class="aboutContents clearfix">
+    <div class="aboutContentsBox">
     <img src="images/top/about_img.jpg">
-    <p>お店の説明お店の説明お店の説明<br>
+    <p>お店の説明お店の説明お店の説明
     がはいりますお店の説明お店の説明お店の説明</p>
+    </div>
     <img src="images/top/more_btn.png">
     </div>
   </section>
@@ -286,16 +328,18 @@
   <section id="shopInfo">
     <h3>SHOP&nbsp;INFO</h3>
     <div class="aboutContents clearfix">
+    <div class="aboutContentsBox">
     <img src="images/top/shopinfo_img.jpg">
-    <p>お店の説明お店の説明お店の説明<br>
+    <p>お店の説明お店の説明お店の説明
     がはいりますお店の説明お店の説明お店の説明</p>
+    </div>
     <img src="images/top/more_btn.png">
     </div>
-  </div>    
-  </div>
-  
-</div>
+    </section>
+
 <!-- rightSidebar -->
+</div>
+
 </div>
 </div>
 
