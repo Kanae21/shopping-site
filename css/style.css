@@ -36,7 +36,7 @@ ul, li {
 }
 
 h1 {
-  margin-bottom:0;
+  margin-bottom:10px;
 }
 #contentAll {
       margin:30px 0 30px 0;
@@ -69,12 +69,11 @@ p {
 
 #headerLogo {
   float: left;
+  padding-bottom:20px;
 }
 
 
 #headerLinks {
-    height: 88px;
-    position: relative;
     margin-bottom: 20px;
 }
 
@@ -86,10 +85,12 @@ p {
 
 #headerLinks .headerNavi {
     right: 65px;
+    top:40px;
 }
 
 #headerLinks .headerSNS {
     right: 0;
+    top:40px;
 }
 
 #headerLinks .headerSNS li + li{
@@ -156,10 +157,10 @@ p {
       right: auto;
   }
   
-  .container {
-    padding:0;
-    width: 100%;
-  }
+  /*.container {*/
+  /*  padding:0;*/
+  /*  width: 100%;*/
+  /*}*/
   
   .nine columns {
     float:none;
@@ -622,6 +623,7 @@ footer ul li {
 ul#list_img {
   list-style: none;
   display:flex;
+  justify-content:space-between;
   width:30%;
   box-sizing: border-box;
   flex-wrap: wrap;
@@ -631,9 +633,14 @@ ul#list_img {
 
 ul#list_img li {
   list-style: none;
-  width:50%;
+  width:47%;
 }
 
+#display_img img {
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+}
 
 @media only screen and (max-width:769px) {
 #carouselWrap{
